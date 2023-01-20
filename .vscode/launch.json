@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Debug server",
+            "command": "npm run start",
+            "cwd": "${workspaceFolder}/server"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Debug client",
+            "request": "launch",
+            "command": "npm run start",
+            "cwd": "${workspaceFolder}/client"
+        }
+    ]
+}

@@ -1,7 +1,9 @@
-const router = require('express').Router()
+import express from 'express'
+import postRoutes from './posts.js'
 
-router.get('/', (req, res) => {
-    res.end('Hello world!')
-})
+const router = express.Router()
 
-module.exports = router
+// POSTS
+router.use('/posts', postRoutes)
+
+export default router
